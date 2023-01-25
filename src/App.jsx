@@ -16,10 +16,10 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/blog' element={<Blog />} />
-          <Route path='/blog/articles/:slug' element={<PostByCategory />} />
-          <Route path='/blog/article/:slug' element={<Post />} />
-          <Route path='/blog/articles/search/:slug' element={<Search />} />
+          <Route path='blog' element={<Blog />} />
+          <Route path='blog/articles/:slug' element={<PostByCategory />} />
+          <Route path='blog/article/:slug' element={<Post />} />
+          <Route path='blog/articles/search/:slug' element={<Search />} />
           <Route path='/politique-de-confidentialite' element={<Politiques />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<NotFound />} />
