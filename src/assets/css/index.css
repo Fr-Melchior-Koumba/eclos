@@ -16,6 +16,10 @@ h1, h2{
   font-family: 'Inter', sans-serif;
 }
 
+.category-active{
+  background-color: #5FC2BA;
+  color: #0B162C;
+}
 
 .text-gradient {
   background: linear-gradient(269.96deg, #1979D1 5.54%, #5FC2BA 88.41%);
