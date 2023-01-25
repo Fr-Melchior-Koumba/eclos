@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Politiques from "./components/Politiques"
-import Blog from "./pages/blog/Blog"
-import Post from "./pages/blog/Post"
-import PostByCategory from "./pages/blog/PostByCategory"
-import Search from "./pages/blog/Search"
 import Contact from "./pages/portfolio/Contact"
 import Home from "./pages/portfolio/Home"
 import NotFound from "./components/NotFound"
+import Blog from "./pages/portfolio/Blog"
+import PostByCategory from "./pages/portfolio/PostByCategory"
+import Search from "./pages/portfolio/Search"
+import Post from "./pages/portfolio/Post"
 
 
 function App() {
