@@ -7,23 +7,63 @@ import Search from "./pages/blog/Search"
 import Contact from "./pages/portfolio/Contact"
 import Home from "./pages/portfolio/Home"
 import NotFound from "./components/NotFound"
+import { renderRoutes } from "react-router-config"
 
 
 function App() {
 
+  const routes = [
+    {
+      path: '/',
+      component: Home,
+      exact: true,
+    },
+    {
+      path: '/blog',
+      component: Blog,
+    },
+    {
+      path: '/blog/articles/:slug',
+      component: PostByCategory,
+    },
+
+    {
+        path: '/blog/article/:slug',
+        component: Post,
+      },
+
+      {
+        path: '/blog/articles/search/:slug',
+        component: Search,
+      },
+
+      
+      {
+        path: '/politique-de-confidentialite',
+        component: Politiques,
+      },
+
+      
+      {
+        path: '/contact',
+        component: Contact,
+      },
+
+      
+      {
+        path: '*',
+        component: NotFound,
+      },
+  ];
+
 
   return (
     
+     <main>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/blog' element={<Blog />} />
-          <Route path='/blog/articles/:slug' element={<PostByCategory />} />
-          <Route path='/blog/article/:slug' element={<Post />} />
-          <Route path='/blog/articles/search/:slug' element={<Search />} />
-          <Route path='/politique-de-confidentialite' element={<Politiques />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path={routes.path} element={routes.component} />
         </Routes>
+     </main>
 
   )
 }
