@@ -3,6 +3,45 @@ import moment from 'moment/moment'
 
 
 const PostDisplay = ({ post }) => {
+
+  const getContent = (index, text, obj, type) => {
+    let modifiedText = text;
+
+    if(obj){
+            if(obj.bold){
+                modifiedText = (<b key={index}>{text}</b>)
+            }
+            if(obj.italic){
+                modifiedText = (<em key={index}>{text}</em>)
+            }
+            if(obj.underline){
+                modifiedText = (<u key={index}>{text}</u>)
+            }
+        }
+
+    switch(type){
+        case 'heading-three':
+            return <h3 key={index} className='text-terciary text-[20px] ss:text-[25px] py-4 tracking-[1px] font-bold'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>
+        case 'paragraph':
+            return <p key={index} className='text-gray-400 tracking-[1px] leading-[1.3rem] py-3 text-justify'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
+        case 'heading-four':
+            return <h4 key={index} className='text-terciary py-4'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
+        case 'image':
+            return (
+                <img
+                key={index}
+                alt={obj.title}
+                height={obj.height}
+                width={obj.width}
+                src={obj.src}
+                  />
+            );
+            default:
+                return modifiedText;   
+        }
+      }
+
+
     
   return (
     <article className='w-full'>
@@ -14,7 +53,10 @@ const PostDisplay = ({ post }) => {
         </div>
         <img src={post.coverImage.url} alt={post.title} />
         <div>
-            <p className='text-gray-300 tracking-[1px] leading-[2rem] py-3 text-justify' dangerouslySetInnerHTML={{__html: post.content.html}}></p>
+        {post?.content.raw.children.map((typeObj, index) => {
+              const children = typeObj.children.map((item, itemIndex) => getContent(itemIndex, item.text, item))
+              return getContent(index, children, typeObj, typeObj.type)
+          })}
         </div>
 
     </article>

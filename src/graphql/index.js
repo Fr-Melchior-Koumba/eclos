@@ -15,7 +15,7 @@ const post = `
     title,
     slug,
     coverImage { url },
-    content { html },
+    content { raw },
     excerpt,
     author { photo {url} },
     createdAt,

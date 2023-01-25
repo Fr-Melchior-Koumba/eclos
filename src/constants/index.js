@@ -132,7 +132,7 @@ export const prestations = [
         id: 4,
         img: setting,
         title: "Maintenance de site",
-        text: "Un garantie à la bonne santé de votre site web, à l'optimisation de ses performances graphiques et techniques."
+        text: "Une garantie à la bonne santé de votre site web, à l'optimisation de ses performances graphiques et techniques."
     }
 ];
 
