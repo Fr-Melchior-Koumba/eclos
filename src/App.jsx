@@ -14,44 +14,43 @@ function App() {
   const routes = [
     {
       path: '/',
-      component: Home,
-      exact: true,
+      element: Home,
     },
     {
       path: '/blog',
-      component: Blog,
+      element: Blog,
     },
     {
       path: '/blog/articles/:slug',
-      component: PostByCategory,
+      element: PostByCategory,
     },
 
     {
         path: '/blog/article/:slug',
-        component: Post,
+        element: Post,
       },
 
       {
         path: '/blog/articles/search/:slug',
-        component: Search,
+        element: Search,
       },
 
       
       {
         path: '/politique-de-confidentialite',
-        component: Politiques,
+        element: Politiques,
       },
 
       
       {
         path: '/contact',
-        component: Contact,
+        element: Contact,
       },
 
       
       {
         path: '*',
-        component: NotFound,
+        element: NotFound,
       },
   ];
 
@@ -60,7 +59,7 @@ function App() {
     
      <main>
         <Routes>
-          <Route path={routes.path} element={routes.component} />
+          <Route path={routes.path} element={routes.element} />
         </Routes>
      </main>
 
