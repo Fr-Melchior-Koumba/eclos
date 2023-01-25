@@ -23,7 +23,7 @@ const PostDisplay = ({ post }) => {
         case 'heading-three':
             return <h3 key={index} className='text-terciary text-[20px] ss:text-[25px] py-4 tracking-[1px] font-bold'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>
         case 'paragraph':
-            return <p key={index} className='text-gray-400 tracking-[1px] leading-[1.5rem] py-3 text-center'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
+            return <p key={index} className='text-gray-400 tracking-[1px] leading-[1.5rem] py-3'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
         case 'heading-four':
             return <h4 key={index} className='text-terciary py-4'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
         case 'image':
