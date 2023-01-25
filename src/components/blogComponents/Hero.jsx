@@ -24,7 +24,7 @@ const Hero = () => {
 
         {categories?.map((category) => (
           <li key={category.name} className='px-3 py-3'>
-            <Link to={`/blog/articles/${category.slug}`} className={`${`/blog/articles/${category.slug}` === pathname ? 'bg-teal-500 text-primary' : ''} px-5 py-2 text-terciary bg-backgroundOne hover:bg-terciary hover:text-primary px-5 py-2 rounded-full tracking-[1px] capitalize text-[16px] ss:text-[22px]`}>{category.name}</Link>
+            <Link to={`/blog/articles/${category.slug}`} className={`${`/blog/articles/${category.slug}` === pathname ? 'bg-teal-600 text-primary' : ''} px-5 py-2 text-terciary bg-backgroundOne hover:bg-terciary hover:text-primary px-5 py-2 rounded-full tracking-[1px] capitalize text-[16px] ss:text-[22px]`}>{category.name}</Link>
           </li>
         ))}
       </ul>
