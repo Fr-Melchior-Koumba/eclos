@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Politiques from "./components/Politiques"
 import Blog from "./pages/blog/Blog"
 import Post from "./pages/blog/Post"
@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-      <Router>
+    
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/blog' element={<Blog />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-      </Router>
+
   )
 }
 

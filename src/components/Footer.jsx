@@ -46,7 +46,7 @@ const Footer = () => {
             {footerLink.map(link => (
                 <div key={link.id} className='flex items-center mb-5'>
                     <img src={chevron} alt="chevron" />
-                    <a href={link.url} className='ml-3 text-[18px] ss:text-[20px] text-secondary hover:underline py-2'>{link.title}</a>
+                    <Link to={link.url} className='ml-3 text-[18px] ss:text-[20px] text-secondary hover:underline py-2'>{link.title}</Link>
                 </div>
             ))}
             <div className='flex gap-3'>
