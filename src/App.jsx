@@ -7,7 +7,6 @@ import Search from "./pages/blog/Search"
 import Contact from "./pages/portfolio/Contact"
 import Home from "./pages/portfolio/Home"
 import NotFound from "./components/NotFound"
-import { renderRoutes } from "react-router-config"
 
 
 function App() {
