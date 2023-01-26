@@ -8,7 +8,7 @@ const PostCard = ({ posts }) => {
   return (
     <div className='flex flex-wrap justify-center gap-5'>
     {posts?.map((post) => (
-    <div key={post.id} className='bg-backgroundPost rounded-xl pb-5 w-[500px] h-[750px]'>
+    <div key={post.id} className='bg-backgroundPost rounded-xl pb-5 w-[500px] h-[800px]'>
         <div className='relative overflow-hidden pb-[1rem]'>
         <img src={post.coverImage.url} alt={post.title} width={500} height={500} className='object-cover rounded-xl'/>
         <div className='flex flex-col ml-[1rem]'>
