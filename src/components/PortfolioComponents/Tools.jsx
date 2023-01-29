@@ -8,7 +8,7 @@ const Tools = () => {
       <div className='text-center'>
       <h2 className='w-full text-gradient font-bold text-[22px] ss:text-[40px]'>Mes Prestations</h2>
       <p className={`${styles.paragraph}`}>Eclos propose, une gamme de prestation assez complète <br className='sm:block hidden' />
-pour que vous puissiez trouvez ce qui correspond à votre besoin.</p>
+pour que vous puissiez trouver ce qui correspond à votre besoin.</p>
       </div>
 
       <div className='flex flex-wrap justify-center gap-5 py-5'>

@@ -50,7 +50,7 @@ const Conception = () => {
            </div>
            <div className='text-secondary tracking-[1px] flex flex-col gap-3 py-5'>
             <p>Tu as une question ? Tu te demandes si <span className='text-terciary'>Eclos</span> pourra satisfaire ton besoin? <br className='sm:block hidden' /></p>
-            <p>Tu voudrais en saoir plus sur les tarifs ?</p>
+            <p>Tu voudrais en savoir plus sur les tarifs ?</p>
             <p>N'hésite pas à me joindre directement <span className='text-terciary'>+241 066 74 34 53</span></p>
             <Link to='/contact' className='text-white md:w-[500px] text-center background-gradient py-3 px-6 rounded-xl tracking-[1px] font-semibold mt-5'>
                 ou à m'envoyer les grandes lignes de ton projet   

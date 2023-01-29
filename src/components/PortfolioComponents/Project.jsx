@@ -8,7 +8,7 @@ const Project = () => {
   return (
     <section id="project" className='py-[10rem]'>
       <div className={`${styles.flexStart} flex-col`}>
-        <h2 className='w-full flex flex-row justify-between items-center text-gradient font-bold text-[22px] ss:text-[40px]'>Projets Standars</h2>
+        <h2 className='w-full flex flex-row justify-between items-center text-gradient font-bold text-[22px] ss:text-[40px]'>Projets Standards</h2>
       </div>
       <div className='sm:flex justify-between items-center gap-5'>
           {projects.map((project) => (

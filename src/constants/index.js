@@ -72,7 +72,7 @@ export const advantages = [
     {
         id: 2,
         img: maintenance,
-        name: "maintenace",
+        name: "maintenance",
         text: "Mettre en place des mises à jour ou l’ajout de quelques fonctionnalités."
     },
 ];
